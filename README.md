@@ -17,11 +17,11 @@
 
 ## Features
 
-- **Add & Delete Tasks** – Easily manage your to-do list
-- **Mark Tasks as Completed** – Stay organized with visual tracking
-- **Bunny-Themed UI** – Calming, pastel design with bunny icons
-- **Offline & Local** – No internet or account required
-- **Portable App** – Just download and run — no installation needed
+- **Add, Edit & Delete Tasks** – Easily manage your daily to-do list
+- **Snooze Tasks** – Temporarily hide tasks and bring them back later
+- **Pixel-Cute Bunny Theme** – Adorable pixel-style interface with pastel colors and bunny icons
+- **Offline & Local Storage** – No internet or account required; data is saved on your device
+- **Portable Desktop App** – Just download and run — no installation needed
 
 ---
 
@@ -36,31 +36,36 @@
 
 After launching the app:
 
-1. **Add a Task**: Type your task and press **“Add”**
-2. **Complete a Task**: Click the checkbox to mark it done
-3. **Delete a Task**: Click the **“Delete”** button
-4. **Persistent Tasks**: Tasks stay saved locally between sessions
+1. **Add a Task** – Type your task and click **“Add”**
+2. **Edit a Task** – Click on the task text to update it
+3. **Snooze a Task** – Temporarily hide tasks and view them later
+4. **Delete a Task** – Click the **“Delete”** button to remove it
+5. **Auto-Save** – All tasks are saved locally and persist between sessions
 
 ---
 
-## 🗂Code Structure
+## Code Structure
 
 ```plaintext
 bunny-day-planner/
+├── beep.mp3           # Sound played on task interaction
+├── bunny.gif          # Cute animation used in the UI
+├── bunny.ico          # App icon (Electron window/favicon)
+├── bunny.png          # Static bunny image
 ├── index.html         # Main HTML layout
-├── style.css          # Bunny-themed styles
-├── renderer.js        # Front-end logic (add/delete/complete tasks)
-├── main.js            # Electron main process
-├── package.json       # App metadata and dependencies
-├── assets/            # Icons and images
+├── style.css          # Styles and bunny theme
+├── script.js          # Logic for task actions
+├── main.js            # Electron entry point
+├── package.json       # Electron app config and dependencies
+├── package-lock.json  # Locked dependencies
 └── README.md
-````
+
 
 ---
 
 ## Download
 
-➡️ [**Download Bunny Day Planner for Windows (.exe)**](https://github.com/yourusername/bunny-day-planner/releases/latest)
+➡️ [**Download Bunny Day Planner for Windows (.exe)**](https://drive.google.com/drive/folders/1CpsO274OigK4QSft_yhG9AXI6vOrIHtG?usp=sharing)
 
 > Just extract the zip folder and double-click `BunnyDayPlanner.exe`. No installation needed.
 
