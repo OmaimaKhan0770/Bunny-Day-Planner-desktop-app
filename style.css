@@ -1,0 +1,180 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(to bottom, #ffd1dc, #e0bbf7);
+  color: #4b0082;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container, .intro-screen {
+  padding: 20px;
+  max-width: 450px;
+  margin: 40px auto;
+  background: #fff0f6;
+  border: 5px double #d291bc;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #e7a6ff;
+  box-sizing: border-box;
+
+  /* Let container height grow naturally */
+  min-height: 350px;
+  /* No fixed height, no max-height */
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.bunny, .bunny-static, .bunny-popup {
+  width: 150px;
+  margin: 10px auto;
+  display: block;
+}
+
+input, button {
+  font-family: inherit;
+  border: 2px solid #c084fc;
+  border-radius: 10px;
+  background: #fff;
+  color: #800080;
+}
+
+/* Form layout */
+#activity-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#activity-form input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+}
+
+/* Second row: time input and button side-by-side */
+.time-button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#activity-form input[type="time"] {
+  padding: 10px;
+  width: 140px;
+}
+
+#activity-form button[type="submit"] {
+  padding: 10px 16px;
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 10px;
+  background: #d291bc;
+  border: none;
+  color: #4b0082;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#activity-form button[type="submit"]:hover {
+  background: #b173a6;
+}
+
+#clock {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* List styles — no fixed height or scroll */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* List items: flex, wrap, with spacing */
+li {
+  background: #ffe4fa;
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px dashed #da70d6;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+li span {
+  flex-grow: 1;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+li .action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+li button {
+  background: #d291bc;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  cursor: pointer;
+  color: #4b0082;
+  transition: background 0.3s ease;
+}
+
+li button:hover {
+  background: #b173a6;
+}
+
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff0f6;
+  border: 3px solid #ff69b4;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #ffb6c1;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-buttons {
+  margin-top: 15px;
+}
+
+.popup-buttons button {
+  background: #d291bc;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 10px;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  color: #4b0082;
+  transition: background 0.3s ease;
+}
+
+.popup-buttons button:hover {
+  background: #b173a6;
+}

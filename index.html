@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel Bunny Planner</title>
+  <link rel="icon" type="image/x-icon" href="bunny.ico" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Intro screen -->
+  <div class="intro-screen" id="intro">
+    <img src="bunny.gif" alt="Cute Bunny Waving" class="bunny"/>
+    <h2>Hi there! Let's plan your day</h2>
+  </div>
+
+  <!-- Main app -->
+  <div class="app-container hidden" id="app">
+    <div class="header">
+      <img src="bunny.png" class="bunny-static" />
+      <h1>My Bunny Day Planner</h1>
+      <div id="clock">00:00:00</div>
+    </div>
+
+    <!-- Form to add or update activity -->
+    <form id="activity-form">
+  <input type="text" id="activity" placeholder="Activity" required />
+  <div class="time-button-row">
+    <input type="time" id="time" required />
+    <button type="submit">Add</button>
+  </div>
+</form>
+
+
+
+    <!-- List of scheduled activities -->
+    <ul id="schedule-list"></ul>
+  </div>
+
+  <!-- Reminder popup -->
+  <div id="reminder-popup" class="popup hidden">
+    <img src="bunny.png" class="bunny-popup"/>
+    <p id="reminder-message"></p>
+    <div class="popup-buttons">
+      <button id="ok-btn">OK</button>
+      <button id="snooze-btn">Snooze</button>
+    </div>
+  </div>
+
+  <!-- Beep sound -->
+  <audio id="beep-sound" src="beep.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
