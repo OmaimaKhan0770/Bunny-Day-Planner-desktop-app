@@ -1,78 +1,84 @@
-# 🐰 Bunny Day Planner
 
-**Bunny Day Planner** is a desktop task management application built using **HTML, CSS, and JavaScript**, and packaged with **Electron**. Featuring a soft, bunny-themed design, this app makes daily planning simple, calm, and cute.
+#  Bunny Day Planner
 
----
-
-## Table of Contents
-
-- [Features](#features)
-- [Requirements](#requirements)
-- [Usage](#usage)
-- [Code Structure](#code-structure)
-- [Download](#download)
-- [Credits](#credits)
+**Bunny Day Planner** is a pixel-cute desktop task management app built using **HTML, CSS, and JavaScript**, and packaged with **Electron**. Featuring an adorable bunny-themed interface, it helps you organize your day in a calm, fun, and visual way.
 
 ---
 
-## Features
+##  Table of Contents
 
-- **Add, Edit & Delete Tasks** – Easily manage your daily to-do list
-- **Snooze Tasks** – Temporarily hide tasks and bring them back later
-- **Pixel-Cute Bunny Theme** – Adorable pixel-style interface with pastel colors and bunny icons
-- **Offline & Local Storage** – No internet or account required; data is saved on your device
-- **Portable Desktop App** – Just download and run — no installation needed
-
----
-
-## ⚙Requirements
-
-- **Windows OS** (for running the prebuilt `.exe`)
-- **Node.js + npm** (only needed if running or modifying from source)
+- [ Features](#-features)
+- [ Requirements](#-requirements)
+- [ Usage](#-usage)
+- [ Code Structure](#️-code-structure)
+- [ Download](#-download)
+- [ Credits](#-credits)
 
 ---
 
-## Usage
+##  Features
+
+- **Add, Edit & Delete Tasks** – Easily manage your daily to-do list  
+- **Snooze Tasks** – Temporarily hide tasks and bring them back later  
+- **Pixel-Cute Bunny Theme** – Adorable pixel-style design with pastel colors and bunny visuals  
+- **Offline & Local Storage** – No internet or account needed; your data stays on your device  
+- **Portable Desktop App** – Download, extract, and run — no installation required  
+
+---
+
+## ⚙ Requirements
+
+- **Windows OS** – Required to run the prebuilt `.exe` version  
+- **Node.js + npm** – Only required if running or modifying the source code  
+
+---
+
+##  Usage
 
 After launching the app:
 
 1. **Add a Task** – Type your task and click **“Add”**
-2. **Edit a Task** – Click on the task text to update it
-3. **Snooze a Task** – Temporarily hide tasks and view them later
-4. **Delete a Task** – Click the **“Delete”** button to remove it
-5. **Auto-Save** – All tasks are saved locally and persist between sessions
+2. **Edit a Task** – Click on a task’s text to update it
+3. **Snooze a Task** – Hide tasks temporarily and bring them back later
+4. **Delete a Task** – Click the **“Delete”** button to remove a task
+5. **Auto-Save** – Tasks are saved locally and persist between sessions
 
 ---
 
-## Code Structure
+##  Code Structure
 
 ```plaintext
 bunny-day-planner/
 ├── beep.mp3           # Sound played on task interaction
 ├── bunny.gif          # Cute animation used in the UI
-├── bunny.ico          # App icon (Electron window/favicon)
-├── bunny.png          # Static bunny image
-├── index.html         # Main HTML layout
-├── style.css          # Styles and bunny theme
-├── script.js          # Logic for task actions
-├── main.js            # Electron entry point
-├── package.json       # Electron app config and dependencies
-├── package-lock.json  # Locked dependencies
-└── README.md
-
+├── bunny.ico          # App icon for Electron window
+├── bunny.png          # Static bunny image used in UI
+├── index.html         # Main layout structure
+├── style.css          # Pixel-style UI and layout styling
+├── script.js          # Frontend logic (tasks, snoozing, events)
+├── main.js            # Electron app entry point
+├── package.json       # Electron project metadata and config
+├── package-lock.json  # Dependency lock file
+└── README.md          # Project documentation
+````
 
 ---
 
-## Download
+##  Download
 
 ➡️ [**Download Bunny Day Planner for Windows (.exe)**](https://drive.google.com/drive/folders/1CpsO274OigK4QSft_yhG9AXI6vOrIHtG?usp=sharing)
 
-> Just extract the zip folder and double-click `BunnyDayPlanner.exe`. No installation needed.
+> Just extract the ZIP folder and double-click `BunnyDayPlanner.exe`.
+> No installation or setup required.
 
 ---
 
-## Credits
+##  Credits
 
 * **Developer**: Omaima Khan
+* **Design Inspiration**: Pixel-style bunny visuals and soft UI aesthetics
 
 ---
+
+
+
